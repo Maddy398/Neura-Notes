@@ -1,0 +1,149 @@
+.contact-page {
+  padding: 2rem;
+}
+
+.newsletter-section {
+  display:flex;
+  justify-content: center;
+  background-color:rgba(8, 8, 8, 0.694) ;
+  padding: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter-content img {
+
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.newsletter-content h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #5c5cfc;
+}
+
+.newsletter-content p {
+  margin-bottom: 1rem;
+  color: #666;
+}
+
+.newsletter-input {
+  display: inline-flex;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.newsletter-input input {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  min-width: 250px;
+}
+
+.send-button {
+  background-color: #5c5cfc;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.send-button:hover {
+  background-color: #4a4ad1;
+}
+
+.contact-section {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.contact-options {
+  margin-top: 1rem;
+}
+
+.email-button {
+  background-color: #5c5cfc;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.email-button:hover {
+  background-color: #4a4ad1;
+}
+
+.footer {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.footer-logo {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer-column h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-column p {
+  margin: 0.3rem 0;
+  color: #666;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 1rem;
+  color: #aaa;
+}
+
+.footer-logo h3 {
+  margin: 0.5rem 0;
+  color: #333;
+}
+
+.footer-logo p {
+  margin: 0.2rem 0;
+  color: #777;
+}
+
+.footer-bottom p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .newsletter-input {
+    flex-direction: column;
+  }
+
+  .newsletter-input input {
+    margin-bottom: 0.5rem;
+  }
+}
+

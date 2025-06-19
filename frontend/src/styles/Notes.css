@@ -1,0 +1,252 @@
+.notes-section {
+  background-color: #0f0f0f;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h2 {
+  color: #d0e415;
+  font-size: 25px;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+.upload-section input {
+  display: block;
+  color: #fffbfb;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #fffefe;
+  border-radius: 5px;
+}
+
+.upload-section button {
+  background-color: #007bff;
+  color: white;
+  padding-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.upload-section button:hover {
+  background-color: #0056b3;
+}
+
+.previously-uploaded {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #d0e415;
+}
+
+/* Notes Grid */
+.notes-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Note Card */
+.note-card {
+  background-color: rgb(14, 13, 13);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+}
+
+.note-card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.note-card p {
+  font-size: 14px;
+  color: #fffbfb;
+  margin-top: 5px;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.download-btn, .modify-btn, .delete-btn ,.summarize-btn{
+  padding: 8px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.download-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.download-btn:hover {
+  background-color: #218838;
+}
+
+.modify-btn {
+  background-color: #ffc107;
+  color: black;
+}
+
+.modify-btn:hover {
+  background-color: #e0a800;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+}
+.summarize-btn {
+  background-color: #fff;
+  color: black;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+.summarize-btn:hover {
+  background-color: #b7b3b3;
+}
+
+.font{
+  background-color: #0f0f0f;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Modal Content Box */
+.modal-content {
+  background: #1e293b; /* Dark theme background */
+  color: #ffffff; /* Light text for contrast */
+  padding: 40px; /* Increased padding for better spacing */
+  border-radius: 12px;
+  width: 80%;
+  max-width: 600px; /* Increased max width */
+  min-height: 250px; /* Increased height */
+  text-align: left;
+  position: relative;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  transform: scale(0.95);
+  animation: scaleUp 0.3s ease-in-out forwards;
+}
+
+/* Modal Title */
+.modal-content h3 {
+  text-align: center;
+  font-size: 30px; /* Increased font size */
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #fff; /* Blue accent */
+}
+
+/* Modal Text */
+.modal-content p {
+  font-size: 16px; /* Increased font size */
+  line-height: 1.8; /* More line spacing */
+  color: #d1d5db; /* Light gray text */
+  margin-bottom: 15px;
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 22px;
+  cursor: pointer;
+  background: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  transition: background 0.3s ease-in-out;
+}
+
+.close-btn:hover {
+  background: #dc2626;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Scale Up Animation */
+@keyframes scaleUp {
+  from {
+    transform: scale(0.95);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1e1e1e; /* Darker shade for contrast */
+  padding: 10px;
+  border-radius: 8px;
+  margin-top:2rem;
+  margin-bottom:2rem;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+.search-container h3 {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.search-container input {
+  background: #2a2a2a; /* Dark input background */
+  color: #ffffff;
+  padding: 8px 12px;
+  border: 1px solid #444;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+}
+
+.search-container input::placeholder {
+  color: #bbb;
+}
+
+.search-container input:focus {
+  border-color: #00aaff;
+  box-shadow: 0 0 5px rgba(0, 170, 255, 0.5);
+}

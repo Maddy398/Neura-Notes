@@ -1,0 +1,238 @@
+/* General Styling */
+.home-container {
+  background-color: #121212;
+  color: #ffffff;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+/* Hero Section */
+.hero {
+  max-width: 800px;
+  margin: 1.2rem auto;
+  padding: 4rem 2rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #b0b0b0;
+  margin-bottom: 2rem;
+}
+
+.main-heading {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-shadow: 5px 5px 15px rgba(255, 255, 255, 0.3);
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.home-btn {
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 8px 25px rgba(74, 144, 226, 0.5);
+}
+
+/* Primary Button */
+.primary-btn {
+  background-color: #4A90E2;
+  color: white;
+  border: none;
+}
+
+.primary-btn:hover {
+  background-color: #357ABD;
+  box-shadow: 0 12px 35px rgba(74, 144, 226, 0.7);
+  transform: translateY(-2px);
+}
+
+.primary-btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 3px 10px rgba(74, 144, 226, 0.4);
+}
+
+/* Secondary Button */
+.secondary-btn {
+  background-color: #1E1E1E;
+  color: white;
+  border: 1px solid #4A90E2;
+  box-shadow: 0 8px 25px rgba(74, 144, 226, 0.4);
+}
+
+.secondary-btn:hover {
+  background-color: #333;
+  box-shadow: 0 8px 20px rgba(74, 144, 226, 0.5);
+  transform: translateY(-2px);
+}
+
+.secondary-btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 3px 10px rgba(74, 144, 226, 0.3);
+}
+
+/* Features Section */
+.features {
+  margin: 4rem auto;
+}
+
+.features h2 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+}
+
+.card {
+  --background: linear-gradient(to right, #4A90E2, #357ABD);
+  width: 220px;
+  height: 260px;
+  padding: 5px;
+  border-radius: 0.5rem;
+  overflow: visible;
+  background: var(--background);
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-info {
+  background: #1E1E1E;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.7rem;
+  padding: 1rem;
+  text-align: center;
+  transition: color 0.5s;
+}
+
+.card .icon {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #4A90E2;
+}
+
+.card .title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  letter-spacing: 0.05em;
+}
+
+.card .description {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-top: 5px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 25px rgba(74, 144, 226, 0.3);
+}
+
+.card:hover .card-info {
+  color: #4A90E2;
+}
+
+/* How It Works Section */
+.how-it-works {
+  background: #2A2A2A;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.how-it-works h2 {
+  color: #F0F0F0;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.steps {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.step {
+  background: #1E1E1E;
+  border: 2px solid #F7B42B;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 280px;
+  box-shadow: 0 5px 15px rgba(247, 180, 43, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.step p {
+  font-size: 1rem;
+  color: #D3D3D3;
+}
+
+.step:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(247, 180, 43, 0.4);
+}
+
+/* Call to Action */
+.cta {
+  text-align: center;
+  background: linear-gradient(to right, rgba(25, 25, 25, 0.9), rgba(15, 15, 15, 0.9));
+  padding: 3rem 2rem;
+  border-radius: 10px;
+  margin-top: 3rem;
+  box-shadow: 0 0 15px rgba(74, 144, 226, 0.3);
+}
+
+.cta h2 {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.cta p {
+  color: #ddd;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta .primary-btn {
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 15px rgba(74, 144, 226, 0.4);
+}

@@ -1,0 +1,106 @@
+/* Header Styling */
+.header {
+    background-color: rgba(27, 27, 28, 0.7);
+    padding: 1rem 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    font-size:0.75rem;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: auto;
+  }
+  
+  .logo {
+    /* font-size: 30px; */
+    font-weight: bold;
+    color: #00FFFF;
+    text-decoration: none;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem; /* More spacing */
+  }
+  
+  .nav-links li {
+    display: inline-block;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    padding: 0.5rem 1rem;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  /* Animated underline effect */
+  .nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: #ffcc00;
+    transition: width 0.3s ease, left 0.3s ease;
+  }
+  
+  .nav-links a:hover::after,
+  .nav-links .active::after {
+    width: 100%;
+    left: 0;
+  }
+  
+  .nav-links a:hover,
+  .nav-links .active {
+    color: #ffcc00; /* Yellow highlight */
+  }
+  
+
+  .auth-buttons {
+    display: flex;
+    gap: 1rem;
+    font-size: 1rem;
+  }
+  
+  .btn {
+    text-decoration: none;
+    padding: 0.75rem 0.75rem;
+    font-weight: bold;
+    border-radius: 0.8rem;
+    transition: all 0.3s ease;
+  }
+  
+  .login-btn {
+    background-color: transparent;
+    color: #ffcc00;
+    border: 2px solid #ffcc00;
+  }
+  
+  .login-btn:hover {
+    background-color: #ffcc00;
+    color: #1e1e2f;
+  }
+  
+  .signup-btn {
+    background-color: #ffcc00;
+    color: #1e1e2f;
+  }
+  
+  .signup-btn:hover {
+    background-color: #ffdb4d;
+  }
+  
